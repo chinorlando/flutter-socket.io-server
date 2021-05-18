@@ -34,7 +34,7 @@ io.on('connection', client => {
     });
 
     client.on('mimensaje', (payload) => {
-        console.log(payload);
+        console.table(payload);
         client.broadcast.emit('nuevo-mensaje', payload);
     });
 
